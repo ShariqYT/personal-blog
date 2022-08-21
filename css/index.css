@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'centra no2';
+    src: url(../font/CentraNo2-Book.ttf);
+}
+
 * {
-    font-family: url("../font/CentraNo2-Book.ttf");
+    font-family: 'centra no2';
     margin: 0;
     padding: 0;
 }
