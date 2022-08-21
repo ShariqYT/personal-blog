@@ -1,0 +1,295 @@
+
+@media only screen and (max-width: 1440px) {
+    .f-section {
+        height: 70vh;
+    }
+
+    main .head h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 1262px) {
+    .nav-logoname h1 {
+        padding: 20px;
+    }
+
+    .nav-right {
+        transition: all 0.7s ease-in-out;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .navbar {
+        height: 430px;
+        flex-direction: column;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 65px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+
+    .text .top-h,
+    .text .bot-h {
+        font-size: 2rem;
+    }
+
+    .img img {
+        height: 200px;
+    }
+
+    .f-section {
+        height: 40vh;
+    }
+
+    main .head h1 {
+        font-size: 2.5rem;
+    }
+
+    .monitor {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .monitor img {
+        height: 300px;
+    }
+
+    .head h1{
+        text-align: center;
+    }
+
+    .text .name {
+        font-size: 2.6rem;
+        padding-left: 200px;
+    }
+
+    .text .spec {
+        font-size: 1.7rem;
+        padding-left: 200px;
+    }
+
+    .text .specs {
+        font-size: 1rem;
+        padding-left: 200px;
+    }
+}
+
+@media only screen and (max-width:912px) {
+    .f-section {
+        height: 30vh;
+    }
+}
+@media only screen and (max-width:820px) {
+    .f-section {
+        height: 30vh;
+    }
+    .text .top-h,
+    .text .bot-h {
+        font-size: 2rem;
+        padding-top: 15px;
+    }
+    footer .text-footer{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .text .top-h,
+    .text .bot-h {
+        font-size: 1.8rem;
+    }
+
+    .main {
+        padding-left: 0px;
+    }
+
+    .img {
+        width: 10%;
+    }
+
+    .text {
+        width: 105%;
+    }
+
+    .img img {
+        height: 120px;
+    }
+
+    .f-section {
+        height: 30vh;
+    }
+
+    main .head h1 {
+        font-size: 2rem;
+        padding: 0px 100px;
+    }
+
+    .monitor {
+        padding: 10px;
+    }
+
+    .text .name {
+        font-size: 2.6rem;
+        padding-left: 100px;
+    }
+
+    .text .spec {
+        font-size: 1.7rem;
+        padding-left: 100px;
+    }
+
+    .text .specs {
+        font-size: 1rem;
+        padding-left: 100px;
+    }
+
+    footer .text-footer {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:425px) {
+
+    .text .top-h,
+    .text .bot-h {
+        font-size: 1.1rem;
+        padding-top: 15px;
+    }
+
+    .main {
+        padding-top: 20px;
+        padding-left: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .main .btn {
+        margin-top: 20px;
+        padding: 10px 10px;
+    }
+
+    .main .btn a {
+        font-size: 0.7rem;
+    }
+
+    .img img {
+        height: 80px;
+        border: 2px solid red;
+    }
+
+    .text {
+        width: 105%;
+    }
+
+    .f-section {
+        height: 30vh;
+
+    }
+
+    main .head h1 {
+        font-size: 1.3rem;
+        padding: 0px 75px;
+    }
+    
+    .monitor {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .monitor img {
+        height: 200px;
+    }
+
+    .text .name {
+        font-size: 2.6rem;
+        padding-left: 20px;
+    }
+
+    .text .spec {
+        font-size: 1.7rem;
+        padding-left: 20px;
+    }
+
+    .text .specs {
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+
+    footer .text-footer {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .f-section {
+        height: 35vh;
+    }
+    main .head h1{
+        font-size: 1.5rem;
+        padding: 10px;
+        align-items: center;
+    }
+    .text .name {
+        font-size: 2rem;
+    }
+
+    .text .spec {
+        font-size: 1.5rem;
+    }
+
+    .text .specs {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:412px) {
+    .f-section {
+        height: 35vh;
+    }
+}
+@media only screen and (max-width:375px) {
+    .f-section {
+        height: 45vh;
+    }
+    main .head h1{
+        font-size: 1.5rem;
+        padding: 10px;
+        align-items: center;
+    }
+    .text .name {
+        font-size: 2rem;
+    }
+
+    .text .spec {
+        font-size: 1.5rem;
+    }
+
+    .text .specs {
+        font-size: 1rem;
+    }
+    footer .text-footer{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .f-section {
+        height: 35vh;
+    }
+}
+

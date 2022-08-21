@@ -1,0 +1,205 @@
+* {
+    font-family: "centra no2";
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+
+.background {
+    background: rgba(0, 0, 0, 0.3) url("../img/bg.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-logoname {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-logoname:hover {
+    color: red;
+    text-shadow: 1px 1px 10px white;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 30px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-list li a:hover {
+    color: red;
+    text-shadow: 1px 1px 10px white;
+}
+
+.nav-right {
+    padding-bottom: 20px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.btn {
+    padding: 10px 10px;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn:hover {
+    color: red;
+    box-shadow: 1px 1px 10px red;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 20px;
+    width: 33px;
+    height: 5px;
+    margin: 5px 3px;
+}
+
+/* Section  */
+
+.main {
+    padding: 100px;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.f-section {
+    height: 56vh;
+}
+
+.img {
+    width: 30%;
+}
+
+.img img {
+    height: 300px;
+    border-radius: 1000px;
+    border: 5px solid red;
+    box-shadow: 1px 1px 10px black;
+}
+
+
+
+.text .top-h,
+.text .bot-h {
+    text-shadow: 1px 1px 10px black;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.text span {
+    color: red;
+    text-shadow: 1px 1px 10px white;
+}
+
+hr {
+    border: 3px solid red;
+    box-shadow: 5px 5px 5px grey;
+}
+
+/* Main  */
+
+main .head h1 {
+    text-shadow: 1px 1px 10px grey;
+    text-decoration: underline;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+.monitor {
+    display: flex;
+    justify-content: flex-start;
+    padding: 100px;
+}
+
+.monitor .name {
+    padding-bottom: 50px;
+    padding-left: 300px;
+    font-size: 4rem;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.monitor .spec {
+    color: red;
+    padding-left: 300px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.monitor .specs {
+    font-weight: 800;
+    padding-left: 300px;
+    font-size: 1.3rem;
+}
+
+/* Footer  */
+
+.text-footer {
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
