@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'Centra';
+    src: url(../font/CentraNo2-Book.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Centra';
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation  */
+
+.background {
+    background: rgba(0, 0, 0, 0.3) url("../img/bg.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-logoname {
+    font-size: 1rem;
+}
+
+.nav-logoname a{
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration: none;
+    color: black;
+}
+.nav-logoname a:hover {
+    color: red;
+    text-shadow: 1px 1px 10px white;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 30px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-list li a:hover {
+    color: red;
+    text-shadow: 1px 1px 10px white;
+}
+
+.nav-right {
+    padding-bottom: 20px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.btn {
+    padding: 10px 10px;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn:hover {
+    background-color: rgb(29, 29, 29);
+    color: red;
+    box-shadow: 1px 1px 10px red;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 20px;
+    width: 33px;
+    height: 5px;
+    margin: 5px 3px;
+}
+
+/* Section  */
+section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contact{
+    color: white;
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contact-form h1{
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+.contact-form h1 span{
+    color: #f9004d;
+}
+
+.contact-form p{
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 15px;
+    background-color: #191919;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1rem ;
+    border-radius: 10px;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contact-form form .btn{
+    font-size: 1.6rem;
+    display: inline-block;
+    background: #f9004d;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+.contact-form form .btn:hover{
+    color: white;
+    text-shadow: 1px 1px 5px white;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width:1440px){
+    .contact-form h1{
+        font-size: 3rem;
+    }
+    .contact-form p{
+        font-size: 0.8rem;
+    }
+    .contact-form form input,
+    form textarea{
+        width: 90%;
+    }
+    .contact-form form .btn{
+        font-size: 1.5rem;
+        width: 150px;
+    }
+    .navbar{
+        z-index: 2;
+    }
+
+}
+@media only screen and (max-width:1820px){
+    .contact-form form input,
+    form textarea{
+        display: flex;
+        width: 150%;
+        margin-left: -100px;
+    }
+    .contact-form form .btn{
+        font-size: 1rem;
+        width: 100px;
+    }
+}
+@media only screen and (max-width:768px){
+    .contact-form h1{
+        font-size: 3rem;
+    }
+    .contact-form p{
+        font-size: 0.8rem;
+    }
+    .contact-form form input,
+    form textarea{
+        display: flex;
+        width: 150%;
+        margin-left: -100px;
+    }
+    .contact-form form .btn{
+        font-size: 1rem;
+        width: 100px;
+    }
+    .navbar li{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:425px){
+
+    .contact-form form input,
+    form textarea{
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav-logoname h1 {
+        padding: 20px;
+    }
+    .nav-logoname h1 a {
+        color: white;
+    }
+
+    .nav-right {
+        transition: all 0.7s ease-in-out;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        transition: all 0.7s ease-in-out;
+    }
+    .nav-list li a{
+        color: white;
+    }
+
+    .navbar {
+        height: 320px;
+        flex-direction: column;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 65px;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .contact-form form input,
+    form textarea{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .contact-form h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .contact-form p{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .contact-form form input,
+    form textarea{
+        width: 90%;
+        margin-left: 10px;
+    }
+    .navbar{
+        z-index: 2;
+    }
+}
+

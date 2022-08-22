@@ -1,15 +1,20 @@
 @font-face {
-    font-family: 'centra no2';
+    font-family: 'Centra';
     src: url(../font/CentraNo2-Book.ttf);
 }
 
 * {
-    font-family: 'centra no2';
+    font-family: 'Centra';
     margin: 0;
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Navigation */
+
 
 .background {
     background: rgba(0, 0, 0, 0.3) url("../img/bg.jpg");
@@ -28,11 +33,14 @@
 
 .nav-logoname {
     font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-logoname:hover {
+.nav-logoname a{
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration: none;
+    color: black;
+}
+.nav-logoname a:hover {
     color: red;
     text-shadow: 1px 1px 10px white;
 }
@@ -82,6 +90,7 @@
 }
 
 .btn:hover {
+    background-color: rgb(29, 29, 29);
     color: red;
     box-shadow: 1px 1px 10px red;
 }
@@ -198,13 +207,38 @@ main .head h1 {
 
 /* Footer  */
 
-.text-footer {
-    background: url("../img/bg.jpg");
+#about{
+    background: rgba(0, 0, 0, 1);
     background-size: cover;
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 20px 0px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+
+.about-text{
+    background: rgba(0, 0, 0, 1);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 500;
+    color: white;
+}
+
+.text-footer {
+    background: rgba(0, 0, 0, 1);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
 }
