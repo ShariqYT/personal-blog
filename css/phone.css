@@ -14,32 +14,40 @@
         padding: 20px;
     }
 
-    .nav-right {
-        transition: all 0.7s ease-in-out;
-    }
-
     .nav-list {
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: 0 ;
+        left: 0;
+        z-index: 10;
         flex-direction: column;
-        transition: all 0.7s ease-in-out;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        transition: top 1s ease;
+        background-color: black;
     }
-
-    .navbar {
-        height: 430px;
-        flex-direction: column;
-        transition: all 0.4s ease-in-out;
+    nav .nav-list .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
-
-    .burger {
+    nav .openMenu{
         display: block;
     }
 
-    .h-nav-resp {
-        height: 65px;
+
+    nav .nav-list button{
+        display: inline-block;
     }
 
-    .v-class-resp {
-        opacity: 0;
-    }
+    /* .navbar {
+        height: 430px;
+        flex-direction: column;
+        transition: all 0.4s ease-in-out;
+    } */
 
     .text .top-h,
     .text .bot-h {
@@ -238,7 +246,7 @@
 
 @media only screen and (max-width:414px) {
     .f-section {
-        height: 35vh;
+        height: 30vh;
     }
     main .head h1{
         font-size: 1.5rem;
@@ -256,6 +264,16 @@
     .text .specs {
         font-size: 1rem;
     }
+
+    footer .text-footer{
+        font-size: 1rem;
+    }
+    #about{
+        font-size: 2rem;
+    }
+    footer .about-text{
+        font-size: 1rem;
+    }
 }
 @media only screen and (max-width:412px) {
     .f-section {
@@ -263,6 +281,34 @@
     }
 }
 @media only screen and (max-width:375px) {
+    .nav-logoname h1 {
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    .nav-list li{
+        font-size: 1rem;
+    }
+    .nav-list button a{
+        font-size: 1rem;
+    }
+
+    nav .nav-list .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu{
+        display: block;
+        font-size: 1.4rem;
+    }
+
+
+    nav .nav-list button{
+        padding: 10px 10px;
+    }
+
     .f-section {
         height: 45vh;
     }
@@ -283,6 +329,12 @@
         font-size: 1rem;
     }
     footer .text-footer{
+        font-size: 1rem;
+    }
+    #about{
+        font-size: 2rem;
+    }
+    footer .about-text{
         font-size: 1rem;
     }
 }

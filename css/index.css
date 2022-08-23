@@ -17,12 +17,13 @@ html{
 
 
 .background {
-    background: rgba(0, 0, 0, 0.3) url("../img/bg.jpg");
+    background: url("../img/bg.jpg");
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .navbar {
+    background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +39,7 @@ html{
 .nav-logoname a{
     transition: all 0.3s ease-in-out 0s;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .nav-logoname a:hover {
     color: red;
@@ -60,8 +61,10 @@ html{
 
 .nav-list li a {
     text-decoration: none;
-    color: black;
+    display: inline-block;
+    color: white;
     transition: all 0.3s ease-in-out 0s;
+    text-transform: uppercase;
 }
 
 .nav-list li a:hover {
@@ -69,8 +72,24 @@ html{
     text-shadow: 1px 1px 10px white;
 }
 
-.nav-right {
-    padding-bottom: 20px;
+
+nav .openMenu{
+    color: white;
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .nav-list .closeMenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .nav-list .closeMenu{
+    color: white;
+    margin: 20px;
 }
 
 .btn a {
@@ -95,7 +114,7 @@ html{
     box-shadow: 1px 1px 10px red;
 }
 
-.burger {
+/* .burger {
     display: none;
     position: absolute;
     cursor: pointer;
@@ -110,7 +129,7 @@ html{
     width: 33px;
     height: 5px;
     margin: 5px 3px;
-}
+} */
 
 /* Section  */
 
@@ -206,6 +225,10 @@ main .head h1 {
 }
 
 /* Footer  */
+
+footer{
+    margin-top: 100px;
+}
 
 #about{
     background: rgba(0, 0, 0, 1);

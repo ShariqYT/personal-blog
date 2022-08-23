@@ -13,12 +13,13 @@
 /* navigation  */
 
 .background {
-    background: rgba(0, 0, 0, 0.3) url("../img/bg.jpg");
+    background: url("../img/bg.jpg");
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .navbar {
+    background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +35,7 @@
 .nav-logoname a{
     transition: all 0.3s ease-in-out 0s;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .nav-logoname a:hover {
     color: red;
@@ -56,8 +57,10 @@
 
 .nav-list li a {
     text-decoration: none;
-    color: black;
+    display: inline-block;
+    color: white;
     transition: all 0.3s ease-in-out 0s;
+    text-transform: uppercase;
 }
 
 .nav-list li a:hover {
@@ -65,48 +68,26 @@
     text-shadow: 1px 1px 10px white;
 }
 
-.nav-right {
-    padding-bottom: 20px;
-}
 
-.btn a {
+nav .openMenu{
     color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-
-}
-
-.btn {
-    padding: 10px 10px;
-    background-color: black;
-    border: 2px solid red;
-    border-radius: 20px;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.btn:hover {
-    background-color: rgb(29, 29, 29);
-    color: red;
-    box-shadow: 1px 1px 10px red;
-}
-
-.burger {
+    font-size: 2rem;
+    margin: 20px;
     display: none;
-    position: absolute;
     cursor: pointer;
-    right: 5%;
-    top: 15px;
 }
 
-.line {
-    background-color: black;
-    border: 1px solid red;
-    border-radius: 20px;
-    width: 33px;
-    height: 5px;
-    margin: 5px 3px;
+nav .nav-list .closeMenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
 }
+
+nav .nav-list .closeMenu{
+    color: white;
+    margin: 20px;
+}
+
 
 /* Section  */
 section{
@@ -191,9 +172,6 @@ form textarea{
         font-size: 1.5rem;
         width: 150px;
     }
-    .navbar{
-        z-index: 2;
-    }
 
 }
 @media only screen and (max-width:1820px){
@@ -231,7 +209,7 @@ form textarea{
 }
 
 @media only screen and (max-width:425px){
-
+    
     .contact-form form input,
     form textarea{
         width: 100%;
@@ -244,10 +222,6 @@ form textarea{
         color: white;
     }
 
-    .nav-right {
-        transition: all 0.7s ease-in-out;
-    }
-
     .nav-list {
         flex-direction: column;
         transition: all 0.7s ease-in-out;
@@ -255,23 +229,28 @@ form textarea{
     .nav-list li a{
         color: white;
     }
-
-    .navbar {
-        height: 320px;
-        flex-direction: column;
-        transition: all 0.4s ease-in-out;
+    nav .nav-list .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
-
-    .burger {
+    nav .openMenu{
         display: block;
     }
-
-    .h-nav-resp {
-        height: 65px;
-    }
-
-    .v-class-resp {
-        opacity: 0;
+    .nav-list {
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: 0 ;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        transition: top 1s ease;
+        background-color: black;
     }
 }
 
@@ -297,9 +276,6 @@ form textarea{
     form textarea{
         width: 90%;
         margin-left: 10px;
-    }
-    .navbar{
-        z-index: 2;
     }
 }
 

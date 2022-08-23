@@ -1,11 +1,15 @@
-burger = document.querySelector('.burger')
-navbar = document.querySelector('.navbar')
-navList = document.querySelector('.nav-list')
-navRight = document.querySelector('.nav-right')
+const navList = document.querySelector('.nav-list')
+const closeMenu = document.querySelector('.closeMenu')
+const openMenu = document.querySelector('.openMenu')
 
 
-burger.addEventListener('click', () => {
-    navList.classList.toggle('v-class-resp');
-    navbar.classList.toggle('h-nav-resp');
-    navRight.classList.toggle('v-class-resp');
-})
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    navList.style.display= 'flex';
+    navList.style.top= '0';
+}
+function close(){
+    navList.style.top= '-100%';
+}
