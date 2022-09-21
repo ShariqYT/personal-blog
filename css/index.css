@@ -275,3 +275,7 @@ footer{
     position: fixed;
     z-index: 100;
 }
+
+iframe{
+    display: none;
+}
