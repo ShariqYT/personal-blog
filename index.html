@@ -13,6 +13,9 @@
 </head>
 
 <body id="body">
+    
+<div id="preloader"></div>
+
     <nav class="navbar background">
         <div class="nav-logoname">
             <h1> <a href="https://shariqyt.github.io/personal-blog-website.github.io/ ">MOHD SHARIQ</a> </h1>
@@ -137,6 +140,16 @@
         </p>
     </footer>
     <script src="js/resp.js"></script>
-</body>
 
+
+    <script>
+
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+
+    </script>
+    
+</body>
 </html>
